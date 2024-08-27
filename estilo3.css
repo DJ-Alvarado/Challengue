@@ -1,0 +1,263 @@
+*
+{
+    padding: 0;
+    margin:0;
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    color: #F6F6F6;
+}
+
+
+.logo
+{
+    padding-top: 2%;
+    margin-left: 3%;
+    width: 3%;
+    height: 5%;
+}
+
+main
+{
+    margin-inline-start: 2%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin-left: 10%;
+    
+}
+
+.seccion1
+{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.textarea1
+{
+    border:none;
+    color: #0A3871;
+    margin-top: 10px;
+    text-transform: lowercase;
+    resize: none; 
+    height: 70%;
+    width: 100%;
+    font-size: 32px;
+}
+
+::placeholder 
+{
+    color: #0A3871;
+}
+
+.textarea1:focus
+{
+    outline: none;
+}
+
+.informacion
+{
+    color: #495057;
+    font-size: 12px;
+    height: 5%;
+    width: 100%;
+}
+
+.botones
+{
+    display: flex;
+    margin-top: 1%;
+    height: 10%;
+    width: 100%;
+    
+
+}
+
+.btn-encriptar
+{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+
+    width: 50%;
+    font-size: 16px;
+}
+
+
+.btn-desencriptar
+{
+    background-color: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    margin-left: 5%;
+
+    width: 50%;
+    font-size: 16px;
+}
+
+
+.seccion2
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+       
+    margin-inline-start: 5%;
+    margin-top: 0px;
+   
+    position: relative; 
+    display: inline-block; 
+}
+.mensaje
+{
+    
+    background: #ffffff;
+    background-image: url("./joven.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    padding: 2%;
+    color: #0A3871;
+    height: 80%;
+    width: 90%;
+    resize: none; 
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.mensaje:focus
+{
+    outline: none;
+}
+
+.btn-copiar
+{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 10%;
+    margin-top: 1%;
+    width: 30%;
+    font-size: 16px;
+    
+    position:absolute;
+    top: 75%; 
+    right: 35%; 
+    cursor: pointer;  
+}
+    
+.informacion2
+{
+    color: #0A3871;
+    position:absolute;
+    top: 60%; 
+    right: 20%; 
+    background-color: white;
+}
+.informacion2 h3
+{
+    text-align: center;
+}
+@media (max-width: 768px)
+{
+ main 
+ {
+    flex-direction: column;
+ }
+
+ .mensaje
+{
+    
+    background: #ffffff;
+    background-image:none;
+ }   
+ 
+ .seccion1, .seccion2
+ {
+    width: 90%;
+ }
+
+ .informacion2
+{
+    text-align: center;
+    font-size: 100%;
+}
+}
+
+@media (max-width: 375px)
+{
+    main 
+ {
+    flex-direction: column;
+ }
+
+ .mensaje
+{
+    
+    background: #ffffff;
+    background-image:none;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+ }   
+ 
+ .seccion1, .seccion2
+ {
+    width: 90%;
+ }
+
+ .botones
+ {
+    flex-direction: column;
+    margin-top: 1%;
+    justify-content: space-between;
+ }
+
+ .btn-encriptar
+ {
+    height: 60%;
+    width: 100%;
+ }
+
+ .btn-desencriptar
+ {
+    margin-top: 2%;
+    height: 60%;
+    width: 100%;
+    margin-left: 0%;
+ }
+ .informacion2
+{
+    text-align: center;
+    font-size: 100%;
+}
+
+.btn-copiar
+{
+    position:absolute;
+    top: 90%; 
+    right: 35%; 
+    cursor: pointer; 
+}
+
+}
